@@ -58,7 +58,7 @@ header div {
 }
 
 .logo {
-    background-image: url('../img/milogo.png');
+    background-image: url('../img/milogo.webp');
     background-repeat: no-repeat;
     background-size: 150px;
     width: 150px;
@@ -67,7 +67,7 @@ header div {
 }
 
 .logoPeq {
-    background-image: url('../img/milogo.png');
+    background-image: url('../img/milogo.webp');
     background-repeat: no-repeat;
     background-size: 50px;
     float: right;
@@ -136,10 +136,17 @@ main {
     display: none;
 }
 
-#containerIndex figure img, .portada img, .portada{
+#containerIndex figure img, .imgPrincipal, .imgPrincipal img{
     width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.portada img, .portada{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    clip-path: polygon(85% 0, 100% 50%, 85% 100%, 15% 100%, 0 52%, 15% 1%);
 }
 
 #containerIndex figure p a {
@@ -210,6 +217,11 @@ blockquote {
 
 .textoCentrado {
     text-align: center;
+}
+
+.centrado {
+    display: flex;
+    justify-content: center;
 }
 
 abbr {
