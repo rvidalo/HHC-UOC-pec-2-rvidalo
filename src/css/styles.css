@@ -168,6 +168,20 @@ iframe {
     margin: 0 auto;
 }
 
+@keyframes animacion {
+    100% {
+        opacity: 0;
+    }
+
+    0% {
+        opacity: 1;
+    }
+}
+
+.svgAnimacion {
+    animation: animacion 1s ease-in-out;
+}
+
 figcaption {
     margin-bottom: 15px;
     text-align: center;
