@@ -169,17 +169,19 @@ iframe {
 }
 
 @keyframes animacion {
-    100% {
+    0% {
         opacity: 0;
     }
 
-    0% {
+    100% {
         opacity: 1;
     }
 }
 
 .svgAnimacion {
-    animation: animacion 1s ease-in-out;
+    animation: animacion 3s ease-in-out;
+    width: 80%;
+    margin:30px;
 }
 
 figcaption {
